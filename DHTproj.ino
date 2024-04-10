@@ -31,7 +31,7 @@ void loop() {
   temperature_C = dht.readTemperature();
   temperature_F = dht.readTemperature(true);
   humidity = dht.readHumidity();
-  // Tikrina ar nera problemos nuskaitint 
+  // Tikrina ar nera problemos nuskaitant 
   if (isnan(humidity) || isnan(temperature_C) || isnan(temperature_F)) {
     Serial.println("DHT reading failed");
     return;
